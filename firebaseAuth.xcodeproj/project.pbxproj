@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEE14E746FDFD37514DDD03 /* libPods-firebaseAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39903468FF4728C2FA7DF14D /* libPods-firebaseAuth.a */; };
 		D3DE86CA224DD93700116E07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DE86C9224DD93700116E07 /* AppDelegate.m */; };
 		D3DE86CD224DD93700116E07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DE86CC224DD93700116E07 /* ViewController.m */; };
 		D3DE86D0224DD93700116E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DE86CE224DD93700116E07 /* Main.storyboard */; };
 		D3DE86D2224DD93800116E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DE86D1224DD93800116E07 /* Assets.xcassets */; };
 		D3DE86D5224DD93800116E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DE86D3224DD93800116E07 /* LaunchScreen.storyboard */; };
 		D3DE86D8224DD93800116E07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DE86D7224DD93800116E07 /* main.m */; };
+		D3DE86DF224DD97D00116E07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DE86DE224DD97D00116E07 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39903468FF4728C2FA7DF14D /* libPods-firebaseAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firebaseAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EED4CEFC2B3C6F64503AB5 /* Pods-firebaseAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuth.release.xcconfig"; path = "Target Support Files/Pods-firebaseAuth/Pods-firebaseAuth.release.xcconfig"; sourceTree = "<group>"; };
+		A5241D783BD9972B445387FE /* Pods-firebaseAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuth.debug.xcconfig"; path = "Target Support Files/Pods-firebaseAuth/Pods-firebaseAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		D3DE86C5224DD93700116E07 /* firebaseAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DE86C8224DD93700116E07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3DE86C9224DD93700116E07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		D3DE86D4224DD93800116E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3DE86D6224DD93800116E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DE86D7224DD93800116E07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3DE86DE224DD97D00116E07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEE14E746FDFD37514DDD03 /* libPods-firebaseAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94E01AF7487236AF3BC36C19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39903468FF4728C2FA7DF14D /* libPods-firebaseAuth.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A22F680207736911ACF916BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5241D783BD9972B445387FE /* Pods-firebaseAuth.debug.xcconfig */,
+				90EED4CEFC2B3C6F64503AB5 /* Pods-firebaseAuth.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3DE86BC224DD93700116E07 = {
 			isa = PBXGroup;
 			children = (
 				D3DE86C7224DD93700116E07 /* firebaseAuth */,
 				D3DE86C6224DD93700116E07 /* Products */,
+				A22F680207736911ACF916BF /* Pods */,
+				94E01AF7487236AF3BC36C19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +93,7 @@
 				D3DE86D1224DD93800116E07 /* Assets.xcassets */,
 				D3DE86D3224DD93800116E07 /* LaunchScreen.storyboard */,
 				D3DE86D6224DD93800116E07 /* Info.plist */,
+				D3DE86DE224DD97D00116E07 /* GoogleService-Info.plist */,
 				D3DE86D7224DD93800116E07 /* main.m */,
 			);
 			path = firebaseAuth;
@@ -78,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3DE86DB224DD93800116E07 /* Build configuration list for PBXNativeTarget "firebaseAuth" */;
 			buildPhases = (
+				8D21227D62FC95222322ACF2 /* [CP] Check Pods Manifest.lock */,
 				D3DE86C1224DD93700116E07 /* Sources */,
 				D3DE86C2224DD93700116E07 /* Frameworks */,
 				D3DE86C3224DD93700116E07 /* Resources */,
@@ -129,12 +158,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DE86D5224DD93800116E07 /* LaunchScreen.storyboard in Resources */,
+				D3DE86DF224DD97D00116E07 /* GoogleService-Info.plist in Resources */,
 				D3DE86D2224DD93800116E07 /* Assets.xcassets in Resources */,
 				D3DE86D0224DD93700116E07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D21227D62FC95222322ACF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-firebaseAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3DE86C1224DD93700116E07 /* Sources */ = {
@@ -283,6 +338,7 @@
 		};
 		D3DE86DC224DD93800116E07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5241D783BD9972B445387FE /* Pods-firebaseAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +355,7 @@
 		};
 		D3DE86DD224DD93800116E07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EED4CEFC2B3C6F64503AB5 /* Pods-firebaseAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

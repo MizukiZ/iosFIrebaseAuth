@@ -6,7 +6,8 @@
 //  Copyright © 2019 Mizuki Zenta. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Firebase;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

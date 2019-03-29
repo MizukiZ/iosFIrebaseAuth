@@ -7,12 +7,26 @@
 //
 
 #import "ViewController.h"
+@import Firebase;
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *emailInput;
+@property (weak, nonatomic) IBOutlet UITextField *passwordInput;
 
 @end
 
 @implementation ViewController
+- (IBAction)registerBtn:(id)sender {
+    NSString *email = self.emailInput.text;
+    NSString *password = self.passwordInput.text;
+    
+    [[FIRAuth auth] createUserWithEmail:email
+                               password:password
+                             completion:^(FIRAuthDataResult * _Nullable authResult,
+                                          NSError * _Nullable error) {
+                                 // ...
+                             }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
