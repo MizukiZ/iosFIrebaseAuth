@@ -24,7 +24,19 @@
                                password:password
                              completion:^(FIRAuthDataResult * _Nullable authResult,
                                           NSError * _Nullable error) {
-                                 // ...
+                                 if(authResult){
+                                     // create an account successfully
+                                     [[FIRAuth auth] signInWithEmail:email
+                                                            password:password
+                                                          completion:^(FIRAuthDataResult * _Nullable authResult,
+                                                                       NSError * _Nullable error) {
+                                                              if(authResult){
+                                                                  NSLog(@"Logged in successfully!!!");
+                                                              }else{
+                                                                  NSLog(@"Invalid email or password");
+                                                              }
+                                                          }];
+                                 }
                              }];
 }
 
