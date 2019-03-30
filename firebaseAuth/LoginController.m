@@ -6,21 +6,24 @@
 //  Copyright © 2019 Mizuki Zenta. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+
+#import "LoginController.h"
+#import "HomeController.h"
 @import Firebase;
 
-@interface LoginController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *emailInput;
+@interface LoginController ()
 @property (weak, nonatomic) IBOutlet UITextField *passwordInput;
+@property (weak, nonatomic) IBOutlet UITextField *emailInput;
 @end
 
 @implementation LoginController
 
 - (IBAction)loginBtn:(id)sender {
+//
+    
     NSString *email = self.emailInput.text;
     NSString *passowrd = self.passwordInput.text;
-    
+
     [[FIRAuth auth] signInWithEmail:email
                            password:passowrd
                          completion:^(FIRAuthDataResult * _Nullable authResult,

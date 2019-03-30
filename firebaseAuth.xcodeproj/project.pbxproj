@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FEE14E746FDFD37514DDD03 /* libPods-firebaseAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39903468FF4728C2FA7DF14D /* libPods-firebaseAuth.a */; };
 		D393F5AE224DF24E000952CE /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D393F5AD224DF24E000952CE /* LoginController.m */; };
+		D393F5B1224E1743000952CE /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D393F5B0224E1743000952CE /* HomeController.m */; };
 		D3DE86CA224DD93700116E07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DE86C9224DD93700116E07 /* AppDelegate.m */; };
 		D3DE86CD224DD93700116E07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DE86CC224DD93700116E07 /* ViewController.m */; };
 		D3DE86D0224DD93700116E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DE86CE224DD93700116E07 /* Main.storyboard */; };
@@ -23,6 +24,9 @@
 		90EED4CEFC2B3C6F64503AB5 /* Pods-firebaseAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuth.release.xcconfig"; path = "Target Support Files/Pods-firebaseAuth/Pods-firebaseAuth.release.xcconfig"; sourceTree = "<group>"; };
 		A5241D783BD9972B445387FE /* Pods-firebaseAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuth.debug.xcconfig"; path = "Target Support Files/Pods-firebaseAuth/Pods-firebaseAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		D393F5AD224DF24E000952CE /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		D393F5B0224E1743000952CE /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		D393F5B2224E267E000952CE /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		D393F5B3224E2695000952CE /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		D3DE86C5224DD93700116E07 /* firebaseAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DE86C8224DD93700116E07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3DE86C9224DD93700116E07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +101,9 @@
 				D3DE86DE224DD97D00116E07 /* GoogleService-Info.plist */,
 				D3DE86D7224DD93800116E07 /* main.m */,
 				D393F5AD224DF24E000952CE /* LoginController.m */,
+				D393F5B0224E1743000952CE /* HomeController.m */,
+				D393F5B2224E267E000952CE /* HomeController.h */,
+				D393F5B3224E2695000952CE /* LoginController.h */,
 			);
 			path = firebaseAuth;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 				D3DE86CD224DD93700116E07 /* ViewController.m in Sources */,
 				D393F5AE224DF24E000952CE /* LoginController.m in Sources */,
 				D3DE86D8224DD93800116E07 /* main.m in Sources */,
+				D393F5B1224E1743000952CE /* HomeController.m in Sources */,
 				D3DE86CA224DD93700116E07 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

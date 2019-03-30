@@ -1,5 +1,5 @@
 //
-//  LoginController.h
+//  HomeController.h
 //  firebaseAuth
 //
 //  Created by Mizuki Zenta on 29/3/19.
@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginController : UIViewController
+@interface HomeController : UIViewController
 @end
